@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juaniquillo</title>
+    <meta name="description"
+        content="Personal website of Victor Sánchez (Juaniquillo), a web developer based in San Juan. Showcasing projects, skills, and contact information.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Juaniquillo</h1>
+        <nav>
+            <ul>
+                <li><button class="btn" data-dialog="about-dialog">About</button></li>
+                <li><button class="btn" data-dialog="resume-dialog">Resume</button></li>
+                <!-- <li><a href="https://www.linkedin.com/in/juaniquillo/" class="btn"  target="_blank" rel="noopener">Resume</a></li> -->
+                <li><a href="https://github.com/juaniquillo" class="btn" target="_blank" rel="noopener">Github</a></li>
+            </ul>
+        </nav>
+    </header>
+    <dialog id="about-dialog">
+        <div></div>
+        <div></div>
+        <div>
+            <div class="dialog-header">
+                <h2>About Me</h2>
+                <button>Close</button>
+            </div>
+            <div class="dialog-body">
+                <h3>Here's a little bit about me written by some very nice AI agent</h3>
+
+                <p>Hey! I’m Victor — a web developer who’s been mixing creativity and code since dial‑up was still a
+                    thing. I started out as an illustrator, fell head‑first into web development, and never looked back.
+                </p>
+
+                <p>These days I spend my time building clean, functional and accesible web experiences with my favorite
+                    combo: HTML, CSS, JavaScript, PHP, and MySQL. As my resume puts it, I’ve spent years “creating web
+                    applications using HTML, CSS, Javascript, PHP & MySQL” — and honestly, that’s where I have the most
+                    fun.</p>
+
+                <p>My art background (MFA + BFA in drawing and printmaking) still sneaks into everything I do — from
+                    layouts to color choices to the occasional doodle in my notebook.</p>
+
+                <p>I’m based in sunny San Juan, fluent in English and Spanish, and always ready for a new project, a new
+                    challenge, or a new excuse to overthink a font choice.</p>
+
+            </div>
+
+        </div>
+    </dialog>
+
+    <dialog id="resume-dialog">
+        <div class="dialog-header">
+            <h2>Resume</h2>
+            <button>Close</button>
+        </div>
+        
+        <div class="dialog-body">
+            <p>I'm currently working on a resume platform that includes an API for easy consumption. Meanwhile, you can go
+                to my <a href="https://www.linkedin.com/in/juaniquillo/" target="_blank" rel="noopener">LinkedIn</a>
+                profile.</p>
+            <div>
+            </div>
+        </div>
+    </dialog>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
