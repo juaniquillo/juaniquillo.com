@@ -14,7 +14,7 @@
 }
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root, body.dark-mode {
     --primary-color: #facc57;
     --secondary-color: #fd8e26;
 
@@ -41,16 +41,16 @@ body {
 
 header {
     margin-inline: 1rem;
+    display: grid;
+    gap: 2.6rem;
 }
 
 h1 {
     font-weight: 700;
     font-size: 3rem;
     color: var(--primary-color);
-    margin-block-start: 0;
-    margin-block-end: 2rem;
+    margin-block: 0;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, .4);
-    
     @media(min-width: 600px) {
         font-size: 4.8rem;
     }
@@ -97,8 +97,9 @@ nav .btn {
     transition: all 0.3s;
     background: linear-gradient(to bottom, var(--button-secondary), var(--button-primary));
     border: none;
-    border-radius: 2px;
-    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    corner-shape: notch;
+    padding: 0.6rem 1.4rem;
     cursor: pointer;
     font-family: inherit;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
@@ -127,7 +128,8 @@ nav .btn:hover, nav .btn:focus-visible {
 dialog {
     background-color: var(--light-bg);
     color: var(--primary-color);
-    border-radius: 8px;
+    border-radius: 4px;
+    corner-shape: notch;
     border: none;
     padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -152,12 +154,13 @@ dialog h2 {
     margin-bottom: 1.5rem;
 }
 
-dialog button {
+dialog button.close {
     background-color: var(--button-secondary);
     color: var(--button-text);
     outline: 2px solid transparent;
     border: none;
-    border-radius: 4px;
+    border-radius: 2px;
+    corner-shape: notch;
     padding: 0.4rem 1rem;
     transition: all 0.3s;
     &:hover, &:focus-visible {
