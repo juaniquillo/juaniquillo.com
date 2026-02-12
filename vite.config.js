@@ -1,5 +1,6 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
   root: 'src',
@@ -12,4 +13,15 @@ export default defineConfig({
       },
     },
   },
+  plugins: [
+    viteStaticCopy({
+      targets: [
+        {
+          src: 'favicon/favicon.ico',
+          dest: '',
+        },
+        // Add more targets as needed
+      ]
+    })
+  ]
 });
