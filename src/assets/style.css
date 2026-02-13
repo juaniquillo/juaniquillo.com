@@ -45,6 +45,12 @@ a:hover, a:focus-visible {
     text-decoration-color: transparent; 
 }
 
+abbr {
+    text-decoration: underline dotted var(--primary-color);
+    cursor: help;
+    font-weight: 700;
+}
+
 nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -94,7 +100,7 @@ nav .btn {
         fill: var(--button-text);
     }
     @media screen and (max-width: 600px) {
-        font-size: 1.2rem;
+        font-size: 1rem;
         svg {
             width: 25px;
             height: 25px;
