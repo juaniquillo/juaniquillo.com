@@ -47,49 +47,38 @@
             </ul>
         </nav>
     </main>
-    <dialog id="about-dialog">
-        <div></div>
-        <div></div>
-        <div>
-            <div class="dialog-header">
-                <h2>About Me</h2>
-                <button class="close">Close</button>
-            </div>
-            <div class="dialog-body">
-                <h3>Here's a little bit about me written by a very nice <abbr title="Large Language Model">LLM</abbr></h3>
 
-                <p>Hey! I’m Victor — a web developer who’s been mixing creativity and code since dial‑up was still a
-                    thing. I started out as an illustrator, fell head‑first into web development, and never looked back.
-                </p>
+    <dialog id="about-dialog" aria-labelledby="about-title">
+        <div class="dialog-header">
+            <h2 id="about-title">About Me</h2>
+            <button class="close" type="button" autofocus>Close</button>
+        </div>
+        <div class="dialog-body">
+            <h3>Here's a little bit about me written by a very nice <abbr title="Large Language Model">LLM</abbr></h3>
 
-                <p>These days I spend my time building clean, functional and accesible web experiences with my favorite
-                    combo: HTML, CSS, JavaScript, PHP, and MySQL. As my resume puts it, I’ve spent years “creating web
-                    applications using HTML, CSS, Javascript, PHP & MySQL” — and honestly, that’s where I have the most
-                    fun.</p>
+            <p>Hey! I’m Victor — a web developer who’s been mixing creativity and code since dial‑up was still a thing. I started out as an illustrator, fell head‑first into web development, and never looked back.</p>
 
-                <p>My art background (MFA + BFA in drawing and printmaking) still sneaks into everything I do — from
-                    layouts to color choices to the occasional doodle in my notebook.</p>
+            <p>These days I spend my time building clean, functional and accessible web experiences with my favorite combo: <abbr title="Hyper Text Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, <strong>JavaScript</strong>, <abbr title="PHP: Hypertext Preprocessor">PHP</abbr>, and <abbr title="PHP: Hypertext Preprocessor">MySQL</abbr>, and honestly, that’s where I have the most fun.</p>
 
-                <p>I’m based in sunny San Juan, fluent in English and Spanish, and always ready for a new project, a new
-                    challenge, or a new excuse to overthink a font choice.</p>
+            <p>On the backend, I’m happiest working with <strong>Laravel</strong>, especially when I get to build with <strong>Blade</strong> or <strong>Livewire</strong>. I also enjoy mixing in tools like <strong>Vue</strong>, <strong>Inertia</strong>, and the occasional <strong>Node.js</strong> project when it fits the problem. On the front end, I love working with semantic HTML, modern CSS (Grid, Flexbox, custom properties), and just‑enough JavaScript — whether that’s vanilla or something a bit more reactive. I’m comfortable with Git, deployment workflows, actions and all the little pieces that make a project feel polished and maintainable.</p>
 
-            </div>
+            <p>My art background (<abbr title="Master in Fine Arts">MFA</abbr> + <abbr title="Bachelor of Fine Arts">BFA</abbr> in drawing and printmaking) still sneaks into everything I do — from layouts to color choices to the occasional doodle in my sketchbook.</p>
+
+            <p>I’m based in sunny San Juan, fluent in English and Spanish, and always ready for a new project, a new challenge, or a new excuse to overthink a font choice.</p>
 
         </div>
     </dialog>
 
-    <dialog id="resume-dialog">
+    <dialog id="resume-dialog" aria-labelledby="resume-title">
         <div class="dialog-header">
-            <h2>Resume</h2>
-            <button class="close">Close</button>
+            <h2 id="resume-title">Resume</h2>
+            <button class="close" type="button" autofocus>Close</button>
         </div>
         
         <div class="dialog-body">
             <p>I'm currently working on a resume platform that includes an API for easy consumption. Meanwhile, you can go
                 to my <a href="https://www.linkedin.com/in/juaniquillo/" target="_blank" rel="noopener">LinkedIn</a>
                 profile.</p>
-            <div>
-            </div>
         </div>
     </dialog>
 

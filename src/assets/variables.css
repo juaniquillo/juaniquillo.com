@@ -10,7 +10,7 @@
     --button-primary: #124752;
     --button-secondary: #2c7783;
     --button-text: #facc57;
-    --button-hover: #C99900;
+    --button-hover: #c99c08;
 
     --transition-duration: 0.2s;
 }
@@ -18,7 +18,7 @@
 @media (prefers-color-scheme: dark) {
   :root, body.dark-mode {
     --primary-color: #facc57;
-    --secondary-color: #C99900;
+    --secondary-color: #b98e00;
 
     --main-bg: #072027;
     --dark-header-bg: var(--primary-color);

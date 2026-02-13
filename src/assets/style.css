@@ -27,6 +27,7 @@ h1 {
     color: var(--secondary-color);
     margin-block: 0;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, .6);
+    text-wrap: balance;
     @media(min-width: 600px) {
         font-size: 4.8rem;
     }
@@ -34,6 +35,7 @@ h1 {
 
 h2 {
     font-size: 1.8rem;
+    text-wrap: balance;
 }
 
 a {
@@ -45,7 +47,13 @@ a:hover, a:focus-visible {
     text-decoration-color: transparent; 
 }
 
+strong {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
 abbr {
+    color: var(--secondary-color);
     text-decoration: underline dotted var(--primary-color);
     cursor: help;
     font-weight: 700;
@@ -66,7 +74,14 @@ nav li {
     display: inline-block;
 }
 
+/** These styles were produced by some sweet and tears by me.*/
+/** No LLM were used. */
 nav .btn {
+    
+    --bebel-color: var(--button-secondary);
+    --bebel-size: 1px;
+    --bebel-type: solid;
+    
     display:flex;
     gap: .4rem;
     align-items: center;
@@ -80,6 +95,7 @@ nav .btn {
     background: linear-gradient(to bottom, var(--button-secondary), var(--button-primary));
     border: none;
     border-radius: 4px;
+    /** Supported only in Chromium-based browsers */
     corner-shape: notch;
     cursor: pointer;
     font-family: inherit;
@@ -90,8 +106,9 @@ nav .btn {
     span {
         position:absolute;
         inset: 2px;
-        border: var(--button-secondary) 1px solid;
+        border: var(--bebel-color) var(--bebel-size) var(--bebel-type);
         border-radius: inherit;
+        /** Supported only in Chromium-based browsers */
         corner-shape:inherit;
     }
     svg {
@@ -118,12 +135,13 @@ dialog {
     background-color: var(--main-bg);
     color: var(--primary-color);
     border-radius: 4px;
+    /** Supported only in Chromium-based browsers */
     corner-shape: notch;
     border: none;
     padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     width: 80%;
-    max-width: 500px;
+    max-width: 550px;
 }
 
 dialog::backdrop {
