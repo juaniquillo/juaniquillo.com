@@ -15,7 +15,7 @@ body {
     text-align: center;
 }
 
-header {
+main {
     margin-inline: 1rem;
     display: grid;
     gap: 2.6rem;
