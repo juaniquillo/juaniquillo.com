@@ -1,0 +1,29 @@
+:root {
+    color-scheme: light dark;
+
+    --primary-color: #155263;
+    --secondary-color: #0e3b47;
+  
+    --main-bg: #b3d5df;
+    --dark-header-bg: var(--primary-color);
+
+    --button-primary: #124752;
+    --button-secondary: #2c7783;
+    --button-text: #facc57;
+    --button-hover: #C99900;
+
+    --transition-duration: 0.2s;
+}
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root, body.dark-mode {
+    --primary-color: #facc57;
+    --secondary-color: #C99900;
+
+    --main-bg: #072027;
+    --dark-header-bg: var(--primary-color);
+
+    --button-primary: #297961;
+    --button-secondary: #175966;
+  }
+}

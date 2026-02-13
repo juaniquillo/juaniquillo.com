@@ -1,0 +1,79 @@
+/** AI helped a lot with this */
+.cube-container {
+    
+    --width: 40px;
+    --height: 40px;
+    
+    /** half of the cube width/height to position faces correctly */
+    --translate-distance: 20px;
+
+    --translate-duration: 6s;
+    --border-color: var(--primary-color);
+    --border-type: solid;
+    --border-width: 1px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scene {
+    width: var(--width);
+    height: var(--height);
+    perspective: 1000px;
+    /* Provides the 3D effect depth */
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    /* Ensures child elements are positioned in 3D space */
+    animation: rotateCube var(--translate-duration) infinite linear;
+    /* Applies the rotation animation */
+}
+
+.face {
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    border: var(--border-width) var(--border-type) var(--border-color);
+    background-color: transparent;
+}
+
+/* Position each face using transform properties */
+.front {
+    transform: translateZ(var(--translate-distance));
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(var(--translate-distance));
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(var(--translate-distance));
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(var(--translate-distance));
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(var(--translate-distance));
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(var(--translate-distance));
+}
+
+/* Define the rotation animation */
+@keyframes rotateCube {
+    from {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
