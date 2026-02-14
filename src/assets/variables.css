@@ -3,6 +3,7 @@
 
     --primary-color: #155263;
     --secondary-color: #0e3b47;
+    --terciary-color: var(--button-secondary);
   
     --main-bg: #fcdb89;
     --dark-header-bg: var(--primary-color);
@@ -13,17 +14,23 @@
     --button-hover: #c99c08;
 
     --transition-duration: 0.2s;
+
+    --title-shadow-spread: 3px;
 }
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
   :root, body.dark-mode {
     --primary-color: #facc57;
     --secondary-color: #b98e00;
+    --terciary-color: #fad065;
+  
 
     --main-bg: #072027;
     --dark-header-bg: var(--primary-color);
 
     --button-primary: #297961;
     --button-secondary: #175966;
+
+    --title-shadow-spread: 2px;
   }
 }

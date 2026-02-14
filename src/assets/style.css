@@ -1,6 +1,6 @@
 @import url("./variables.css");
 @import url("./cube.css");
-
+@import url("./utilities.css");
 
 body {
     font-family: "Space Mono", monospace;
@@ -16,6 +16,7 @@ body {
 }
 
 main {
+    max-width: 1200px;
     margin-inline: 1rem;
     display: grid;
     gap: 2.6rem;
@@ -26,7 +27,7 @@ h1 {
     font-size: 3rem;
     color: var(--secondary-color);
     margin-block: 0;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, .6);
+    text-shadow: var(--terciary-color) var(--title-shadow-spread) var(--title-shadow-spread);
     text-wrap: balance;
     @media(min-width: 600px) {
         font-size: 4.8rem;
