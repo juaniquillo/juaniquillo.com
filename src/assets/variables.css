@@ -10,7 +10,7 @@
 
     --button-primary: #124752;
     --button-secondary: #2c7783;
-    --button-text: #facc57;
+    --button-text: #fbe7b4;
     --button-hover: #c99c08;
 
     --transition-duration: 0.2s;
@@ -29,6 +29,7 @@
 
   --button-primary: #297961;
   --button-secondary: #175966;
+  --button-text: #facc57;
 
   --title-shadow-spread: 3px;
   

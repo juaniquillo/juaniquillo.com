@@ -5,6 +5,7 @@
 
 body {
     font-family: "Space Mono", monospace;
+    font-size: 1.4rem;
     margin: 0;
     padding: 0;
     background-color: var(--main-bg); /* Lighter body background */
@@ -80,9 +81,9 @@ nav li {
 /** No LLM were used. */
 nav .btn {
     
-    --bebel-color: var(--button-secondary);
-    --bebel-size: 1px;
-    --bebel-type: solid;
+    --bevel-color: var(--button-secondary);
+    --bevel-size: 1px;
+    --bevel-type: solid;
     
     display:flex;
     gap: .4rem;
@@ -106,10 +107,10 @@ nav .btn {
     outline-offset: 1px;;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
     padding: 0.6rem 1.2rem;
-    span {
+    span.bevel {
         position:absolute;
         inset: 2px;
-        border: var(--bebel-color) var(--bebel-size) var(--bebel-type);
+        border: var(--bevel-color) var(--bevel-size) var(--bevel-type);
         border-radius: inherit;
         /** Supported only in Chromium-based browsers */
         corner-shape:inherit;
