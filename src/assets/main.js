@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const setTheme = (theme) => {
         htmlElement.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
+        themeToggle.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
         if (theme === 'dark') {
             lightbulbOn.style.display = 'block';
             lightbulbOff.style.display = 'none';
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         setTheme('light'); // Default to light if no preference
     }
+    themeToggle.setAttribute('aria-pressed', htmlElement.getAttribute('data-theme') === 'dark' ? 'true' : 'false');
 
     // Toggle theme on button click
     themeToggle.addEventListener('click', () => {
