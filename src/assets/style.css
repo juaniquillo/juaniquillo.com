@@ -101,6 +101,7 @@ nav .btn {
     font-family: inherit;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     outline: 2px solid transparent;
+    outline-offset: 1px;;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
     padding: 0.6rem 1.2rem;
     span {
