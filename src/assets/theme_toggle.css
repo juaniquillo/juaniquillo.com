@@ -1,0 +1,36 @@
+.theme-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px; /* Make it easier to click */
+    height: 44px; /* Make it easier to click */
+    padding: 0;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 100;
+}
+
+.theme-toggle svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--primary-color);
+    transition: fill var(--transition-duration) ease;
+}
+
+/* Initially hide the lightbulb-on SVG */
+#lightbulb-on {
+    display: none;
+}
+
+/* When data-theme is dark, show lightbulb-on and hide lightbulb-off */
+html[data-theme="dark"] #lightbulb-on {
+    display: block;
+}
+
+html[data-theme="dark"] #lightbulb-off {
+    display: none;
+}

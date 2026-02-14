@@ -18,12 +18,29 @@
     --title-shadow-spread: 3px;
 }
 /* Dark Mode */
+ [data-theme="dark"] {
+  --primary-color: #facc57;
+  --secondary-color: #b98e00;
+  --terciary-color: #503d01;
+
+
+  --main-bg: #072027;
+  --dark-header-bg: var(--primary-color);
+
+  --button-primary: #297961;
+  --button-secondary: #175966;
+
+  --title-shadow-spread: 3px;
+  
+}
+
 @media (prefers-color-scheme: dark) {
-  :root, body.dark-mode {
+  /* These styles apply if the system prefers dark mode and data-theme isn't set */
+  :root:not([data-theme="light"]) {
     --primary-color: #facc57;
     --secondary-color: #b98e00;
     --terciary-color: #503d01;
-  
+
 
     --main-bg: #072027;
     --dark-header-bg: var(--primary-color);
