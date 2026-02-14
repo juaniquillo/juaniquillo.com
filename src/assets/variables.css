@@ -6,7 +6,7 @@
     --terciary-color: var(--button-secondary);
   
     --main-bg: #fcdb89;
-    --dark-header-bg: var(--primary-color);
+    --dark-header-bg: #368c99;
 
     --button-primary: #124752;
     --button-secondary: #2c7783;
@@ -22,7 +22,7 @@
   :root, body.dark-mode {
     --primary-color: #facc57;
     --secondary-color: #b98e00;
-    --terciary-color: #fad065;
+    --terciary-color: #503d01;
   
 
     --main-bg: #072027;
@@ -31,6 +31,6 @@
     --button-primary: #297961;
     --button-secondary: #175966;
 
-    --title-shadow-spread: 2px;
+    --title-shadow-spread: 3px;
   }
 }
