@@ -20,6 +20,10 @@ export default defineConfig({
           src: 'favicon/favicon.ico',
           dest: '',
         },
+        {
+          src: 'images/og-image.png',
+          dest: '',
+        },
         // Add more targets as needed
       ]
     })
