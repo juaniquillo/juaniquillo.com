@@ -26,7 +26,7 @@ main {
 
 h1 {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 3.2rem;
     color: var(--secondary-color);
     margin-block: 0;
     text-shadow: var(--terciary-color) var(--title-shadow-spread) var(--title-shadow-spread);
