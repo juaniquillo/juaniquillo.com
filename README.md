@@ -32,3 +32,7 @@ To work with this website locally, you'll need to have [Node.js](https://nodejs.
     ```bash
     npm run preview
     ```
+
+## Assets & Credits
+
+*   **Icons:** [Pixel Icon Library](https://pixeliconlibrary.com/)
